@@ -23,7 +23,7 @@
 
     <div class="select-photos">
       <h4>here are some of my favorites</h4>
-      <?php include 'footer.php';?>
+      <?php include 'all_pics.php';?>
     </div>
   </body>
 </html>
