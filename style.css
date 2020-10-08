@@ -46,8 +46,13 @@ h4 {
 }
 
 p {
-  margin: 16px 0 16px 0
+  margin: 16px 0 16px 0;
 }
+
+.closeParagraph {
+  margin: 0px;
+}
+
 a {
   color: blue;
 }
