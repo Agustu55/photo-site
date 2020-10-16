@@ -1,11 +1,10 @@
 <?php
-  echo "<p> running php </p>"
-  $files = scandir('images/');
-  echo "<P> $files</p>"
+  $path = 'images/';
+  $files = scandir($path);
   foreach($files as $file) {
   if($file !== "." && $file !== "..") {
-      echo "<p> adding image $file </p>"
-      echo "<img src='$file' />";
+    $fp = $path . $file;
+    echo "<img src='$fp' />";
   }
 }
 ?>

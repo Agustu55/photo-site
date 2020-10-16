@@ -23,7 +23,20 @@
 
     <div class="select-photos">
       <h4>here are some of my favorites</h4>
-      <?php include 'all_pics.php';?>
+      <!-- <?php include 'all_pics.php';?> -->
+      <div class="container">
+        <div class="photo-gallery">
+          <img src = https://picsum.photos/300/200 alt="Image 1">
+          <img src = https://picsum.photos/300/200 alt="Image 2">
+          <img src = https://picsum.photos/300/200 alt="Image 3">
+          <img src = https://picsum.photos/300/200 alt="Image 4">
+          <img src = https://picsum.photos/300/200 alt="Image 5">
+          <img src = https://picsum.photos/300/200 alt="Image 6">
+          <img src = https://picsum.photos/300/200 alt="Image 7">
+          <img src = https://picsum.photos/300/200 alt="Image 8">
+          <img src = https://picsum.photos/300/200 alt="Image 9">
+        </div>
+      </div>
     </div>
   </body>
 </html>

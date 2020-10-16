@@ -10,6 +10,7 @@ body {
 	font-style: normal;
   font-size:12px;
   padding-left: 15px;
+  width:600px;
 }
 
 ul li {
@@ -48,6 +49,29 @@ h4 {
 p {
   margin: 16px 0 16px 0;
 }
+
+/* 200px is perfect row height for veritcle
+/* 300px is perfect row height for horizontal
+
+/* selectors for photo grid */
+
+.container {
+  width: 60%;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(8,200px);
+  grid-gap: 15px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .closeParagraph {
   margin: 0px;
