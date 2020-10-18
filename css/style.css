@@ -76,7 +76,7 @@ a:hover, a:active, a:focus {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(4,50vw);
+    grid-template-rows: repeat(4,40vw);
   }
 }
 
@@ -92,7 +92,6 @@ a:hover, a:active, a:focus {
 }
 
 /* css for the photo gallery grid */
-
 img {
     width: 100%;
     height: 100%;
@@ -135,7 +134,74 @@ img {
   grid-column: 7/10;
 }
 
-.container > div:nth-child(1n) {
+/* create opacity on image when hovered */
+.img1:hover {opacity: 0.7;}
+.img2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;/* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Fulll height */
+  background-color: rgba(255,255,255,0.5)
+}
+
+/* Model Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 93%;
+  max-height: 80%;
+}
+
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.3s;
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Anywhere in Background */
+.close1 {
+  position: absolute;
+  width: 100%; /* Full width */
+  height: 100%; /* Fulll height */
+}
+
+/* The Close Anywhere in Background */
+.close2 {
+  position: absolute;
+  width: 100%; /* Full width */
+  height: 100%; /* Fulll height */
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 600px){
+  .modal-content {
+    width: 93%;
+  }
+}
+
+/* getting to nth child in grid container */
+/* .container > div:nth-child(1n) {
   background-color: red;
 }
 .container > div:nth-child(2n) {
@@ -143,4 +209,4 @@ img {
 }
 .container > div:nth-child(3n) {
   background-color: yellow;
-}
+} */

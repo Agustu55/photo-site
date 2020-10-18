@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title></title>
   </head>
   <body>
@@ -23,17 +23,39 @@
 
     <div class="select-photos">
       <h4>here are some of my favorites</h4>
-      <!-- <?php include 'all_pics.php';?> -->
+
       <div class="container">
-        <img class="img1" src = small-images/1.jpg alt="Image 1">
-        <img class="img2" src = small-images/2.jpg alt="Image 2">
-        <img class="img3" src = small-images/3.jpg alt="Image 3">
-        <img class="img4" src = small-images/4.jpg alt="Image 4">
-        <img class="img5" src = small-images/5.jpg alt="Image 5">
-        <img class="img6" src = small-images/6.jpg alt="Image 6">
-        <img class="img7" src = small-images/7.jpg alt="Image 7">
-        <img class="img8" src = small-images/8.jpg alt="Image 8">
-        <img class="img9" src = small-images/9.jpg alt="Image 9">
+        <!-- The Modal Trigger -->
+        <img id="img1" class="img1" src = img/m1.jpg alt="image 1">
+        <!-- The Modal Trigger -->
+        <img id="img2" class="img2" src = img/m2.jpg alt="image 2">
+
+        <img class="img3" src = img/s3.jpg alt="Image 3">
+        <img class="img4" src = img/s4.jpg alt="Image 4">
+        <img class="img5" src = img/s5.jpg alt="Image 5">
+        <img class="img6" src = img/s6.jpg alt="Image 6">
+        <img class="img7" src = img/s7.jpg alt="Image 7">
+        <img class="img8" src = img/s8.jpg alt="Image 8">
+        <img class="img9" src = img/s9.jpg alt="Image 9">
+      </div>
+
+      <div class="modal-container">
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+          <span class="close1"></span>
+          <img id="modalimg1" class="modal-content">
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+          <span class="close2"></span>
+          <img id="modalimg2" class="modal-content">
+        </div>
+
+        <script src="js/loadImage.js"></script>
+
+
+
       </div>
   </body>
 </html>
